@@ -1,12 +1,5 @@
 ﻿public class Algorithms
 {
-    //2.1
-    public int Pow(int baseValue, int exponent)
-    {
-        if (exponent == 0)
-            return 1;
-        return baseValue * Pow(baseValue, exponent - 1);
-    }
 
     //2.5
     public static long PowerOf2Iterative(int n)
