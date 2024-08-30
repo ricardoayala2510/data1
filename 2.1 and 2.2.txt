@@ -1,0 +1,34 @@
+2.1 
+ 1. Base Case: 
+ - If `exponent` is 0, then the resulting power is 1 regardless the base given is an integer or not. This is in view of the fact that zero is the multiplicative identity meaning that whenever any number is added with 0 , it remains unaltered. 
+ 
+ 2. Recursive Case: 
+ - If `exponent` is greater than 0 then the result of this multiplication by `base` to the power (`exponent-1`). This step divide the problem into a lower degree of the exponent after calling the function on the exponent which decreases later by 1. 
+ 
+ Function Description: 
+ - Input: One integer, the exponent, at least 0 and one number, the base, at least 1. 
+ - Output: A value that is obtained after arriving at the exponent when base has been raised to that exponent. 
+ 
+ Recursive Function: 
+ 1. If `exponent is 0` then the scientific notation of the given number is ‘0. 0’; If true, return 1. 
+ 2. Otherwise, then return the value of multiplying the value of `base` with the value that is obtained by doing the power of `base` equal to the value of `exponent - 1.
+
+
+
+2.2
+
+a.
+
+ Base case: ( T(0) = 0 )
+
+Recursive case: ( T(n) = T(n-1) + n ) for ( n > 0 )
+
+b. 
+
+function TriangularNumber(n)
+    if n == 0 then
+        return 0
+    else
+        return TriangularNumber(n - 1) + n
+This algorithm as it goes on to sum the current number ‘n’ at with the triangular number of n−1 until it sees the base case of the function.
+
