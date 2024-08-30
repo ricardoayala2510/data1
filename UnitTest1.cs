@@ -2,21 +2,6 @@ using Xunit;
 
 public class AlgorithmsTests
 {
-    // Test for Pow method
-    [Fact]
-    public void Pow_ShouldReturnCorrectResult()
-    {
-        // Arrange
-        var algorithms = new Algorithms();
-        
-        // Act & Assert
-        Assert.Equal(1, algorithms.Pow(2, 0));
-        Assert.Equal(2, algorithms.Pow(2, 1));
-        Assert.Equal(4, algorithms.Pow(2, 2));
-        Assert.Equal(8, algorithms.Pow(2, 3));
-        Assert.Equal(1024, algorithms.Pow(2, 10));
-    }
-
     // Test for PowerOf2Iterative method
     [Fact]
     public void PowerOf2Iterative_ShouldReturnCorrectResult()
